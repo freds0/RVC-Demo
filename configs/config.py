@@ -72,7 +72,7 @@ class Config:
     def arg_parse() -> tuple:
         exe = sys.executable or "python"
         parser = argparse.ArgumentParser()
-        parser.add_argument("--port", type=int, default=9991, help="Listen port")
+        parser.add_argument("--port", type=int, default=7860, help="Listen port")
         parser.add_argument("--pycmd", type=str, default=exe, help="Python command")
         parser.add_argument("--colab", action="store_true", help="Launch in colab")
         parser.add_argument(
